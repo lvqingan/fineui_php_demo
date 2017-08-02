@@ -1,0 +1,9 @@
+/lib
+/common
+/f
+/.idea
+/favicon.ico
+/res
+/index.php
+/source.php
+phpdoc-cache*
