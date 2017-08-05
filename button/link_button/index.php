@@ -25,7 +25,6 @@ use \FineUI\F;
     ->id('LinkButton1')
     ->enabled(false)
     ->text('客户端事件（在页面中定义）')
-    ->onClientClick('clickLinkButton();')
 ?>
     <br/>
     <br/>
