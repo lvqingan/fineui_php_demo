@@ -8,7 +8,7 @@ use \FineUI\F;
 ?>
 
 <style>
-    .customlabel div {
+    .customlabel span {
         color: red;
         font-weight: bold;
     }

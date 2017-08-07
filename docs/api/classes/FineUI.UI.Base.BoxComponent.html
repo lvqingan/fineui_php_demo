@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    API Documentation &raquo; \FineUI\UI\Base\Container
+    <title>    API Documentation &raquo; \FineUI\UI\Base\BoxComponent
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -161,25 +161,25 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                        <li class="method public">
         <a href="#method_boxConfigAlign" title="boxConfigAlign :: 控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）">
             <span class="description">控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）</span><pre>boxConfigAlign</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                        <li class="method public">
         <a href="#method_boxConfigChildMargin" title="boxConfigChildMargin :: 子控件的外边距（当本容器的Layout=VBox或者HBox时有效）">
             <span class="description">子控件的外边距（当本容器的Layout=VBox或者HBox时有效）</span><pre>boxConfigChildMargin</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                        <li class="method public">
         <a href="#method_BoxConfigPadding" title="BoxConfigPadding :: 内边距（当本容器的Layout=VBox或者HBox时有效）">
             <span class="description">内边距（当本容器的Layout=VBox或者HBox时有效）</span><pre>BoxConfigPadding</pre>
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                        <li class="method public">
         <a href="#method_BoxConfigPosition" title="BoxConfigPosition :: 控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）">
             <span class="description">控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）</span><pre>BoxConfigPosition</pre>
         </a>
@@ -197,12 +197,6 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public">
-        <a href="#method_defaults" title="defaults :: 子项的默认属性">
-            <span class="description">子项的默认属性</span><pre>defaults</pre>
-        </a>
-    </li>
-
                                                                                                         <li class="method public inherited">
         <a href="#method_disabled" title="disabled :: 是否禁用">
             <span class="description">是否禁用</span><pre>disabled</pre>
@@ -212,12 +206,6 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_enabled" title="enabled :: 是否启用">
             <span class="description">是否启用</span><pre>enabled</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_fieldDefaults" title="fieldDefaults :: 表单字段子项的默认属性">
-            <span class="description">表单字段子项的默认属性</span><pre>fieldDefaults</pre>
         </a>
     </li>
 
@@ -276,12 +264,6 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_items" title="items :: 设置子元素">
-            <span class="description">设置子元素</span><pre>items</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public inherited">
         <a href="#method_layout" title="layout :: ">
             <span class="description"></span><pre>layout</pre>
         </a>
@@ -357,11 +339,11 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -375,11 +357,11 @@
 
         <div class="span8">
             <div class="element class">
-                <h1>Container</h1>
+                <h1>BoxComponent</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/FineUI.UI.Base.BoxComponent.html">\FineUI\UI\Base\BoxComponent</a>
+                                            Extends <a href="../classes/FineUI.UI.Base.Component.html">\FineUI\UI\Base\Component</a>
                                                         </small>
-                <p class="short_description">容器控件</p>
+                <p class="short_description">矩形控件基类</p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -618,11 +600,11 @@
 
                         </div>
                                             <a id="method_boxConfigAlign"></a>
-                        <div class="element clickable method public  method_boxConfigAlign inherited" data-toggle="collapse" data-target=".method_boxConfigAlign .collapse">
+                        <div class="element clickable method public  method_boxConfigAlign" data-toggle="collapse" data-target=".method_boxConfigAlign .collapse">
                             <h2>控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）</h2>
                             <pre>boxConfigAlign(string $align) : $this</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -645,11 +627,11 @@
 
                         </div>
                                             <a id="method_boxConfigChildMargin"></a>
-                        <div class="element clickable method public  method_boxConfigChildMargin inherited" data-toggle="collapse" data-target=".method_boxConfigChildMargin .collapse">
+                        <div class="element clickable method public  method_boxConfigChildMargin" data-toggle="collapse" data-target=".method_boxConfigChildMargin .collapse">
                             <h2>子控件的外边距（当本容器的Layout=VBox或者HBox时有效）</h2>
                             <pre>boxConfigChildMargin(string $childMargin) : $this</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -672,11 +654,11 @@
 
                         </div>
                                             <a id="method_BoxConfigPadding"></a>
-                        <div class="element clickable method public  method_BoxConfigPadding inherited" data-toggle="collapse" data-target=".method_BoxConfigPadding .collapse">
+                        <div class="element clickable method public  method_BoxConfigPadding" data-toggle="collapse" data-target=".method_BoxConfigPadding .collapse">
                             <h2>内边距（当本容器的Layout=VBox或者HBox时有效）</h2>
                             <pre>BoxConfigPadding(string $padding) : $this</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -699,11 +681,11 @@
 
                         </div>
                                             <a id="method_BoxConfigPosition"></a>
-                        <div class="element clickable method public  method_BoxConfigPosition inherited" data-toggle="collapse" data-target=".method_BoxConfigPosition .collapse">
+                        <div class="element clickable method public  method_BoxConfigPosition" data-toggle="collapse" data-target=".method_BoxConfigPosition .collapse">
                             <h2>控制子控件的位置（当本容器的Layout=VBox或者HBox时有效）</h2>
                             <pre>BoxConfigPosition(string $position) : $this</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -779,33 +761,6 @@
                             </div>
 
                         </div>
-                                            <a id="method_defaults"></a>
-                        <div class="element clickable method public  method_defaults" data-toggle="collapse" data-target=".method_defaults .collapse">
-                            <h2>子项的默认属性</h2>
-                            <pre>defaults(Object $defaults) : $this</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$defaults</h4>
-                                                <code>Object</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>$this</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
                                             <a id="method_disabled"></a>
                         <div class="element clickable method public  method_disabled inherited" data-toggle="collapse" data-target=".method_disabled .collapse">
                             <h2>是否禁用</h2>
@@ -852,33 +807,6 @@
                                                                                     <div class="subelement argument">
                                                 <h4>$enabled</h4>
                                                 <code>boolean</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>$this</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
-                                            <a id="method_fieldDefaults"></a>
-                        <div class="element clickable method public  method_fieldDefaults" data-toggle="collapse" data-target=".method_fieldDefaults .collapse">
-                            <h2>表单字段子项的默认属性</h2>
-                            <pre>fieldDefaults(Object $fieldDefaults) : $this</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$fieldDefaults</h4>
-                                                <code>Object</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1150,39 +1078,12 @@
                             </div>
 
                         </div>
-                                            <a id="method_items"></a>
-                        <div class="element clickable method public  method_items" data-toggle="collapse" data-target=".method_items .collapse">
-                            <h2>设置子元素</h2>
-                            <pre>items(array $items) : $this</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-
-                            
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                                                    </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$items</h4>
-                                                <code>array</code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code>$this</code><p></p>
-                                                                    </div>
-                            </div>
-
-                        </div>
                                             <a id="method_layout"></a>
-                        <div class="element clickable method public  method_layout inherited" data-toggle="collapse" data-target=".method_layout .collapse">
+                        <div class="element clickable method public  method_layout" data-toggle="collapse" data-target=".method_layout .collapse">
                             <h2>layout</h2>
                             <pre>layout(string $type) : $this</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
 
                             
                             <div class="row collapse">
@@ -1517,14 +1418,14 @@
                     
                                                         </div>
             </div>
-            <a id="\FineUI\UI\Base\Container"></a>
+            <a id="\FineUI\UI\Base\BoxComponent"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
     <li><span class="divider">\</span><a href="../namespaces/FineUI.UI.Base.html">Base</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/FineUI.UI.Base.Container.html">Container</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/FineUI.UI.Base.BoxComponent.html">BoxComponent</a></li>
             </ul>
         </div>
     </div>
