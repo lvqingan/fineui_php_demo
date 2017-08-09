@@ -70,14 +70,14 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在左侧')
             ->icon(\FineUI\Enums\Icon::EMAIL)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->cssClass('marginr')
         ?>
 
         <?php echo F::Button()
             ->text('图标在右侧')
             ->icon(\FineUI\Enums\Icon::STAR)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::RIGHT)
             ->cssClass('marginr')
         ?>
@@ -87,7 +87,7 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在上面')
             ->icon(\FineUI\Enums\Icon::EMAIL)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::TOP)
             ->cssClass('marginr')
         ?>
@@ -95,7 +95,7 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在下面')
             ->icon(\FineUI\Enums\Icon::STAR)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
             ->cssClass('marginr')
         ?>

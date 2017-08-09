@@ -72,7 +72,7 @@ use \FineUI\F;
 <?php
     echo F::Button()
         ->id('Button3')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在左侧')
         ->width(150)
         ->height(80)
@@ -81,7 +81,7 @@ use \FineUI\F;
 
     echo F::Button()
         ->id('Button4')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在右侧')
         ->width(150)
         ->height(80)
@@ -93,7 +93,7 @@ use \FineUI\F;
 <?php
     echo F::Button()
         ->id('Button5')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在上面')
         ->width(150)
         ->height(80)
@@ -103,7 +103,7 @@ use \FineUI\F;
 
     echo F::Button()
         ->id('Button6')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在下面')
         ->width(150)
         ->height(80)
@@ -180,7 +180,7 @@ use \FineUI\F;
 <?php
     echo F::Button()
         ->id('Button15')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在左侧')
         ->width(150)
         ->height(80)
@@ -189,7 +189,7 @@ use \FineUI\F;
 
     echo F::Button()
         ->id('Button16')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在右侧')
         ->width(150)
         ->height(80)
@@ -201,7 +201,7 @@ use \FineUI\F;
 <?php
     echo F::Button()
         ->id('Button17')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在上面')
         ->width(150)
         ->height(80)
@@ -211,7 +211,7 @@ use \FineUI\F;
 
     echo F::Button()
         ->id('Button18')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->text('图标在下面')
         ->width(150)
         ->height(80)

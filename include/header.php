@@ -18,3 +18,4 @@
 <body>
 <script src="/f/f.js"></script>
 <script src="/res/js/common.js"></script>
+<script src="/fineuiphp.js"></script>

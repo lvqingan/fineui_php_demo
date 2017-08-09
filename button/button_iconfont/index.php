@@ -78,14 +78,14 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在左侧')
             ->iconFont(\FineUI\Enums\IconFont::HOME)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->cssClass('marginr')
         ?>
 
         <?php echo F::Button()
             ->text('图标在右侧')
             ->iconFont(\FineUI\Enums\IconFont::CAR)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::RIGHT)
             ->cssClass('marginr')
         ?>
@@ -95,7 +95,7 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在上面')
             ->iconFont(\FineUI\Enums\IconFont::CAMERA)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::TOP)
             ->cssClass('marginr')
         ?>
@@ -103,7 +103,7 @@ use \FineUI\F;
         <?php echo F::Button()
             ->text('图标在下面')
             ->iconFont(\FineUI\Enums\IconFont::PHONE)
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
             ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
             ->cssClass('marginr')
         ?>

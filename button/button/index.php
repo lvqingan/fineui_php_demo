@@ -57,7 +57,7 @@ use \FineUI\F;
         echo F::Button()
             ->text('小按钮')
             ->cssClass('marginr')
-            ->size(\FineUI\UI\Button::SIZE_SMALL)
+            ->size(\FineUI\Enums\ButtonSize::SMALL)
         ?>
         <?php
         echo F::Button()
@@ -68,13 +68,13 @@ use \FineUI\F;
         echo F::Button()
             ->text('中等大小按钮')
             ->cssClass('marginr')
-            ->size(\FineUI\UI\Button::SIZE_MEDIUM)
+            ->size(\FineUI\Enums\ButtonSize::MEDIUM)
         ?>
         <?php
         echo F::Button()
             ->text('大按钮')
             ->cssClass('marginr')
-            ->size(\FineUI\UI\Button::SIZE_LARGE)
+            ->size(\FineUI\Enums\ButtonSize::LARGE)
         ?>
     </div>
 

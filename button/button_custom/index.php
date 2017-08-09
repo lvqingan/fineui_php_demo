@@ -22,7 +22,7 @@ use \FineUI\F;
 echo F::Button()
         ->id('Button1')
         ->text('普通按钮')
-        ->size(\FineUI\UI\Button::SIZE_LARGE)
+        ->size(\FineUI\Enums\ButtonSize::LARGE)
         ->onClick('./actions.php?action=Button1_Click')
     ?>
 </div>
