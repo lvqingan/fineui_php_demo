@@ -31,7 +31,7 @@ echo F::Button()
 <?php
 F::Menu()
     ->id('Menu1')
-    ->items(array(
+    ->items(
         F::MenuHyperLink()
             ->icon(\FineUI\Enums\Icon::TAG_GREEN)
             ->target('_blank')
@@ -41,7 +41,7 @@ F::Menu()
             ->icon(\FineUI\Enums\Icon::TAG_BLUE)
             ->text('管理学院')
             ->menu(F::Menu()
-                ->items(array(
+                ->items(
                     F::MenuHyperLink()
                         ->icon(\FineUI\Enums\Icon::TAG_PINK)
                         ->target('_blank')
@@ -52,8 +52,8 @@ F::Menu()
                         ->target('_blank')
                         ->navigateUrl('http://stat.ustc.edu.cn/')
                         ->text('统计与金融系')
-                )))
-    ));
+                ))
+    );
 ?>
 
 <?php \FineUI\PageContext::init() ?>

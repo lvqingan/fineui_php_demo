@@ -16,9 +16,9 @@ echo F::Panel()
     ->boxConfigChildMargin('0 0 10 0')
     ->isViewPort(true)
     ->bodyPadding('10')
-    ->items(array(
+    ->items(
         F::ButtonGroup()
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('btnIcon1')
                     ->text('图标在左侧')
@@ -37,10 +37,10 @@ echo F::Panel()
                     ->text('图标在右侧')
                     ->iconAlign(FineUI\Enums\IconAlign::RIGHT)
                     ->iconFont(FineUI\Enums\IconFont::CAR)
-            )),
+            ),
         F::ButtonGroup()
             ->id('ButtonGroup1')
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('btnIcon3')
                     ->text('图标在上面')
@@ -61,11 +61,11 @@ echo F::Panel()
                     ->text('图标在下面')
                     ->iconAlign(FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(FineUI\Enums\IconFont::PHONE)
-            )),
+            ),
         F::Label()->text('只有图片的按钮：'),
         F::ButtonGroup()
             ->id('ButtonGroup2')
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('Button1')
                     ->iconUrl('/res/images/16/1.png'),
@@ -83,12 +83,12 @@ echo F::Panel()
                     ->iconFont(\FineUI\Enums\IconFont::CAR),
                 F::Button()
                     ->id('Button14')
-                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD),
-            )),
+                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD)
+            ),
             F::Label()->text('Size（Large）：'),
             F::ButtonGroup()
-                ->id('ButtonGroup2')
-                ->items(array(
+                ->id('ButtonGroup3')
+                ->items(
                     F::Button()
                         ->id('Button3')
                         ->text('图标在上面')
@@ -113,8 +113,8 @@ echo F::Panel()
                         ->size(\FineUI\Enums\ButtonSize::LARGE)
                         ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                         ->iconFont(FineUI\Enums\IconFont::PHONE)
-                ))
-    ));
+                )
+    );
 
 ?>
 

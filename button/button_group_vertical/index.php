@@ -16,12 +16,12 @@ echo F::Panel()
     ->boxConfigChildMargin('0 0 10 0')
     ->isViewPort(true)
     ->bodyPadding('10')
-    ->items(array(
+    ->items(
         F::ButtonGroup()
             ->layout(\FineUI\Enums\LayoutType::VBOX)
             ->boxConfigAlign(FineUI\Enums\BoxLayoutAlign::STRETCH_MAX)
             ->vertical(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->text('图标在左侧')
                     ->icon(FineUI\Enums\Icon::EMAIL),
@@ -36,12 +36,12 @@ echo F::Panel()
                     ->text('图标在右侧')
                     ->iconAlign(FineUI\Enums\IconAlign::RIGHT)
                     ->iconFont(FineUI\Enums\IconFont::CAR)
-            )),
+            ),
         F::ButtonGroup()
             ->layout(\FineUI\Enums\LayoutType::VBOX)
             ->boxConfigAlign(FineUI\Enums\BoxLayoutAlign::STRETCH_MAX)
             ->vertical(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->text('图标在上面')
                     ->iconAlign(FineUI\Enums\IconAlign::TOP)
@@ -58,13 +58,13 @@ echo F::Panel()
                     ->text('图标在下面')
                     ->iconAlign(FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(FineUI\Enums\IconFont::PHONE)
-            )),
+            ),
         F::Label()->text('只有图片的按钮：'),
         F::ButtonGroup()
             ->layout(\FineUI\Enums\LayoutType::VBOX)
             ->boxConfigAlign(FineUI\Enums\BoxLayoutAlign::STRETCH_MAX)
             ->vertical(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->iconUrl('/res/images/16/1.png'),
                 F::Button()
@@ -76,14 +76,14 @@ echo F::Panel()
                 F::Button()
                     ->iconFont(\FineUI\Enums\IconFont::CAR),
                 F::Button()
-                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD),
-            )),
+                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD)
+            ),
         F::Label()->text('Size（Large）：'),
         F::ButtonGroup()
             ->layout(\FineUI\Enums\LayoutType::VBOX)
             ->boxConfigAlign(FineUI\Enums\BoxLayoutAlign::STRETCH_MAX)
             ->vertical(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->text('图标在上面')
                     ->size(\FineUI\Enums\ButtonSize::LARGE)
@@ -104,8 +104,8 @@ echo F::Panel()
                     ->size(\FineUI\Enums\ButtonSize::LARGE)
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(FineUI\Enums\IconFont::PHONE)
-            ))
-    ))
+            )
+    )
 ?>
 
 <?php \FineUI\PageContext::init() ?>

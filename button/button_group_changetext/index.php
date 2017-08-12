@@ -15,12 +15,12 @@ echo F::Panel()
     ->height(300)
     ->width(650)
     ->title('面板')
-    ->toolbars(array(
+    ->toolbars(
         F::Toolbar()
-            ->items(array(
+            ->items(
                 F::ButtonGroup()
                     ->id('ButtonGroup1')
-                    ->items(array(
+                    ->items(
                         F::Button()
                             ->id('Button1')
                             ->text('按钮一')
@@ -41,10 +41,10 @@ echo F::Panel()
                             ->text('按钮四')
                             ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                             ->iconFont(\FineUI\Enums\IconFont::PHONE)
-                    ))
-            ))
-    ))
-    ->items(array(
+                    )
+            )
+    )
+    ->items(
         F::Button()
             ->cssClass('marginr')
             ->id('btnChangeButtonText')
@@ -58,7 +58,7 @@ echo F::Panel()
             ->onClick('./actions.php?action=btnShowHideButton_Click', array(
                 'hidden' => new \FineUI\JsCode('F.ui.Button4.isHidden()')
             ))
-    ))
+    )
 ?>
 
 <br/>
@@ -67,7 +67,7 @@ echo F::Panel()
 <?php
 echo F::ButtonGroup()
     ->id('ButtonGroup2')
-    ->items(array(
+    ->items(
         F::Button()
             ->id('Button5')
             ->text('按钮五')
@@ -88,7 +88,7 @@ echo F::ButtonGroup()
             ->text('按钮八')
             ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
             ->iconFont(\FineUI\Enums\IconFont::PHONE)
-    ))
+    )
 ?>
 
 <br/>

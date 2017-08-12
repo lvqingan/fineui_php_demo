@@ -16,10 +16,10 @@ echo F::Panel()
     ->layout(\FineUI\Enums\LayoutType::VBOX)
     ->isViewPort(true)
     ->bodyPadding(10)
-    ->items(array(
+    ->items(
         F::ButtonGroup()
             ->enablePressGroup(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('btnIcon1')
                     ->text('图标在左侧')
@@ -43,11 +43,11 @@ echo F::Panel()
                     ->enablePress(true)
                     ->iconAlign(\FineUI\Enums\IconAlign::RIGHT)
                     ->iconFont(\FineUI\Enums\IconFont::CAR)
-            )),
+            ),
         F::ButtonGroup()
             ->id('ButtonGroup1')
             ->enablePressGroup(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('btnIcon3')
                     ->text('图标在上面')
@@ -73,12 +73,12 @@ echo F::Panel()
                     ->enablePress(true)
                     ->iconAlign(FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(FineUI\Enums\IconFont::PHONE)
-            )),
+            ),
         F::Label()->text('只有图片的按钮：'),
         F::ButtonGroup()
             ->id('ButtonGroup1')
             ->enablePressGroup(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('Button1')
                     ->enablePress(true)
@@ -103,13 +103,13 @@ echo F::Panel()
                 F::Button()
                     ->id('Button14')
                     ->enablePress(true)
-                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD),
-            )),
+                    ->iconFont(\FineUI\Enums\IconFont::CC_MASTERCARD)
+            ),
         F::Label()->text('下面的按钮分组的按下状态改变时，会触发自定义回发事件：'),
         F::ButtonGroup()
             ->id('ButtonGroup3')
             ->enablePressGroup(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('Button3')
                     ->text('按钮一')
@@ -138,8 +138,8 @@ echo F::Panel()
                     ->enablePress(true)
                     ->size(\FineUI\Enums\ButtonSize::LARGE)
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
-                    ->iconFont(\FineUI\Enums\IconFont::PHONE),
-            ))
+                    ->iconFont(\FineUI\Enums\IconFont::PHONE)
+            )
             ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
                 'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
             )),
@@ -148,7 +148,7 @@ echo F::Panel()
             ->id('ButtonGroup4')
             ->enablePressGroup(true)
             ->allowNonePress(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('Button15')
                     ->text('按钮一')
@@ -177,8 +177,8 @@ echo F::Panel()
                     ->enablePress(true)
                     ->size(\FineUI\Enums\ButtonSize::LARGE)
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
-                    ->iconFont(\FineUI\Enums\IconFont::PHONE),
-            ))
+                    ->iconFont(\FineUI\Enums\IconFont::PHONE)
+            )
             ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
                 'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
             )),
@@ -187,7 +187,7 @@ echo F::Panel()
             ->id('ButtonGroup5')
             ->enablePressGroup(true)
             ->allowMultiPress(true)
-            ->items(array(
+            ->items(
                 F::Button()
                     ->id('Button19')
                     ->text('按钮一')
@@ -216,12 +216,12 @@ echo F::Panel()
                     ->pressed(true)
                     ->size(\FineUI\Enums\ButtonSize::LARGE)
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
-                    ->iconFont(\FineUI\Enums\IconFont::PHONE),
-            ))
+                    ->iconFont(\FineUI\Enums\IconFont::PHONE)
+            )
             ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
                 'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
             ))
-    ))
+    )
 ?>
 
 <script>
