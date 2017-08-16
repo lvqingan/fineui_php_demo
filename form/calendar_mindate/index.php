@@ -1,5 +1,5 @@
 <?php
-$sourceFiles = ['./form/calendar/actions.php'];
+$sourceFiles = ['./form/calendar_mindate/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
 require_once '../../include/header.php';
 
@@ -14,6 +14,8 @@ echo F::Calendar()
     ->id('Calendar1')
     ->dateFormatString($calendar1DateFormatString)
     ->selectedDate((new DateTime())->add(new DateInterval('P10D')))
+    ->minDate(new DateTime())
+    ->maxDate((new DateTime())->add(new DateInterval('P20D')))
     ->onDateSelect('./actions.php?action=Calendar1_DateSelect', array(
         'selectedDate' => new \FineUI\JsCode('F.ui.Calendar1.getText()')
     ))
@@ -38,3 +40,5 @@ echo F::Label()
 <?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>
+
+
