@@ -21,14 +21,14 @@ echo F::SimpleForm()
             ->emptyText('请输入用户名')
             ->id('tbxUserName')
             ->required(true)
-            ->showRedStart(true),
+            ->showRedStar(true),
         F::TextBox()
             ->id('tbxPassword')
             ->label('密码')
             ->emptyText('请输入密码')
             ->textMode(\FineUI\Enums\TextMode::PASSWORD)
             ->required(true)
-            ->showRedStart(true),
+            ->showRedStar(true),
         F::Button()
             ->id('btnSubmit')
             ->cssClass('marginr')
@@ -43,6 +43,12 @@ echo F::SimpleForm()
             ->text('重置')
             ->onClientClick('F.ui.SimpleForm1.reset();')
         );
+?>
+<br/>
+<?php
+echo F::Label()
+    ->id('labResult')
+    ->showLabel(false);
 ?>
 
 <?php \FineUI\PageContext::init() ?>

@@ -5,7 +5,12 @@ $action = $_GET['action'];
 use \FineUI\UIHelper;
 
 switch ($action) {
-    case '':
+    case 'btnSubmit_Click':
+        $userName = $_POST['userName'];
+        $password = $_POST['password'];
+
+        UIHelper::Label('labResult')
+            ->text('用户名：' . $userName . ' 密码：' . $password);
 
         UIHelper::result();
         break;
