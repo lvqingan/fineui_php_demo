@@ -14,9 +14,9 @@ echo F::Calendar()
     ->id('Calendar1')
     ->dateFormatString($calendar1DateFormatString)
     ->selectedDate((new DateTime())->add(new DateInterval('P10D')))
-    ->onDateSelect('./actions.php?action=Calendar1_DateSelect', array(
-        'selectedDate' => new \FineUI\JsCode('F.ui.Calendar1.getText()')
-    ))
+    ->onDateSelect('./actions.php?action=Calendar1_DateSelect',
+        new \FineUI\Parameter('selectedDate', 'F.ui.Calendar1.getText()')
+    )
 ?>
 <br/>
 <br/>

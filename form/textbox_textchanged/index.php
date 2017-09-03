@@ -21,16 +21,16 @@ echo F::SimpleForm()
             ->id('TextBox1')
             ->label('文本框一（文本改变事件）')
             ->emptyText('输入字符会立即触发TextChanged事件')
-            ->onTextChanged('./actions.php?action=TextBox1_TextChanged', array(
-                'text' => new \FineUI\JsCode('F.ui.TextBox1.getValue()')
-            )),
+            ->onTextChanged('./actions.php?action=TextBox1_TextChanged',
+                new \FineUI\Parameter('text', 'F.ui.TextBox1.getValue()')
+            ),
         F::TextBox()
             ->id('TextBox2')
             ->label('文本框二（失去焦点事件）')
             ->emptyText('输入字符后失去焦点，会触发Blur事件')
-            ->onBlur('./actions.php?action=TextBox2_Blur', array(
-                'text' => new \FineUI\JsCode('F.ui.TextBox2.getValue()')
-            ))
+            ->onBlur('./actions.php?action=TextBox2_Blur',
+                new \FineUI\Parameter('text', 'F.ui.TextBox2.getValue()')
+            )
     );
 ?>
 <br/>

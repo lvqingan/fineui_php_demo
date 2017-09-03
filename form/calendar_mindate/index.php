@@ -16,9 +16,9 @@ echo F::Calendar()
     ->selectedDate((new DateTime())->add(new DateInterval('P10D')))
     ->minDate(new DateTime())
     ->maxDate((new DateTime())->add(new DateInterval('P20D')))
-    ->onDateSelect('./actions.php?action=Calendar1_DateSelect', array(
-        'selectedDate' => new \FineUI\JsCode('F.ui.Calendar1.getText()')
-    ))
+    ->onDateSelect('./actions.php?action=Calendar1_DateSelect',
+        new \FineUI\Parameter('selectedDate', 'F.ui.Calendar1.getText()')
+    )
 ?>
 <br/>
 <br/>

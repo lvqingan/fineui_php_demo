@@ -140,9 +140,9 @@ echo F::Panel()
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(\FineUI\Enums\IconFont::PHONE)
             )
-            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
-                'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
-            )),
+            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged',
+                new \FineUI\Parameter('pressedInfo', 'getPressedInfo(this)')
+            ),
         F::Label()->text('可以不选（AllowNonePress=true）：'),
         F::ButtonGroup()
             ->id('ButtonGroup4')
@@ -179,9 +179,9 @@ echo F::Panel()
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(\FineUI\Enums\IconFont::PHONE)
             )
-            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
-                'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
-            )),
+            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged',
+                new \FineUI\Parameter('pressedInfo', 'getPressedInfo(this)')
+            ),
         F::Label()->text('可以多选（AllowMultiPress=true）：'),
         F::ButtonGroup()
             ->id('ButtonGroup5')
@@ -218,9 +218,9 @@ echo F::Panel()
                     ->iconAlign(\FineUI\Enums\IconAlign::BOTTOM)
                     ->iconFont(\FineUI\Enums\IconFont::PHONE)
             )
-            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged', array(
-                'pressedInfo' => new \FineUI\JsCode('getPressedInfo(this)')
-            ))
+            ->onPressChanged('./actions.php?action=ButtonGroup_PressChanged',
+                new \FineUI\Parameter('pressedInfo', 'getPressedInfo(this)')
+            )
     )
 ?>
 
