@@ -47,9 +47,9 @@ echo F::Label()
 echo F::Button()
     ->id('btnChangeEnable')
     ->text('启用/禁用最后一个标签')
-    ->onClick('./actions.php?action=btnChangeEnable_Click', array(
-        'enabled' => new \FineUI\JsCode('F.ui.Label3.isEnabled()')
-    ))
+    ->onClick('./actions.php?action=btnChangeEnable_Click',
+        new \FineUI\Parameter('enabled', 'F.ui.Label3.isEnabled()')
+    )
 ?>
 
 <?php \FineUI\PageContext::init() ?>

@@ -32,9 +32,9 @@ use \FineUI\F;
 <?php echo F::Button()
     ->id('btnChangeEnable')
     ->text('启用/禁用最后一个链接按钮')
-    ->onClick('./actions.php?action=btnChangeEnable_Click', array(
-        'enabled' => new FineUI\JsCode('F.ui.LinkButton1.isEnabled()')
-    ))
+    ->onClick('./actions.php?action=btnChangeEnable_Click',
+        new \FineUI\Parameter('enabled', 'F.ui.LinkButton1.isEnabled()')
+    )
 ?>
     <script>
         function clickLinkButton() {

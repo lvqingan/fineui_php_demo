@@ -49,15 +49,13 @@ echo F::Panel()
             ->cssClass('marginr')
             ->id('btnChangeButtonText')
             ->text('修改[按钮四]的文本')
-            ->onClick('./actions.php?action=btnChangeButtonText_Click', array(
-                'text' => new \FineUI\JsCode('F.ui.Button4.getText()')
-            )),
+            ->onClick('./actions.php?action=btnChangeButtonText_Click',
+                new \FineUI\Parameter('text', 'F.ui.Button4.getText()')),
         F::Button()
             ->id('btnShowHideButton')
             ->text('显示隐藏[按钮四]')
-            ->onClick('./actions.php?action=btnShowHideButton_Click', array(
-                'hidden' => new \FineUI\JsCode('F.ui.Button4.isHidden()')
-            ))
+            ->onClick('./actions.php?action=btnShowHideButton_Click',
+                new \FineUI\Parameter('hidden', 'F.ui.Button4.isHidden()'))
     )
 ?>
 
@@ -98,15 +96,13 @@ echo F::Button()
     ->cssClass('marginr')
     ->id('btnChangeButtonText2')
     ->text('修改[按钮八]的文本')
-    ->onClick('./actions.php?action=btnChangeButtonText2_Click', array(
-        'text' => new \FineUI\JsCode('F.ui.Button8.getText()')
-    ));
+    ->onClick('./actions.php?action=btnChangeButtonText2_Click',
+        new \FineUI\Parameter('text', 'F.ui.Button8.getText()'));
 echo F::Button()
     ->id('btnShowHideButton2')
     ->text('显示隐藏[按钮八]')
-    ->onClick('./actions.php?action=btnShowHideButton2_Click', array(
-        'hidden' => new \FineUI\JsCode('F.ui.Button8.isHidden()')
-    ));
+    ->onClick('./actions.php?action=btnShowHideButton2_Click',
+        new \FineUI\Parameter('hidden', 'F.ui.Button8.isHidden()'));
 ?>
 
 <?php \FineUI\PageContext::init() ?>

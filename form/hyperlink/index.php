@@ -36,9 +36,9 @@ echo F::HyperLink()
 echo F::Button()
     ->id('btnChangeEnable')
     ->text('启用/禁用最后一个链接')
-    ->onClick('./actions.php?action=btnChangeEnable_Click', array(
-        'enabled' => new \FineUI\JsCode('F.ui.HyperLink2.isEnabled()')
-    ))
+    ->onClick('./actions.php?action=btnChangeEnable_Click',
+        new \FineUI\Parameter('enabled', 'F.ui.HyperLink2.isEnabled()')
+    )
 ?>
 
 <?php \FineUI\PageContext::init() ?>

@@ -45,9 +45,9 @@ echo F::Image()
 echo F::Button()
     ->text('改变图片的大小')
     ->id('Button1')
-    ->onClick('./actions.php?action=Button1_Click', array(
-        'imageWidth' => new \FineUI\JsCode('F.ui.Image3.getWidth()')
-    ))
+    ->onClick('./actions.php?action=Button1_Click',
+        new \FineUI\Parameter('imageWidth', 'F.ui.Image3.getWidth()')
+    )
 ?>
 
 <?php \FineUI\PageContext::init() ?>

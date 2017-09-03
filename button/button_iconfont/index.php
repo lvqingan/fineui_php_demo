@@ -43,9 +43,9 @@ use \FineUI\F;
             ->id('btnCustomIconFont')
             ->text('点击修改图标（在三个图标之前切换）')
             ->iconFont(\FineUI\Enums\IconFont::VOLUME_UP)
-            ->onClick('./actions.php?action=btnCustomIconFont_Click', [
-                'iconFont' => new \FineUI\JsCode('this.iconFont'),
-            ])
+            ->onClick('./actions.php?action=btnCustomIconFont_Click',
+                new \FineUI\Parameter('iconFont', 'this.iconFont')
+            )
         ?>
     </div>
     <br/>

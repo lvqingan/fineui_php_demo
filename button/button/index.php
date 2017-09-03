@@ -29,9 +29,9 @@ use \FineUI\F;
             ->id('btnChangePressed')
             ->text('改变后面按钮的按下状态')
             ->cssClass('marginr')
-            ->onClick('./actions.php?action=btnChangePressed_Click', array(
-                'pressed' => new \FineUI\JsCode('F.ui.btnPressed.isPressed()'),
-            ))
+            ->onClick('./actions.php?action=btnChangePressed_Click',
+                new \FineUI\Parameter('pressed', 'F.ui.btnPressed.isPressed()')
+            )
         ?>
         <?php
         echo F::Button()

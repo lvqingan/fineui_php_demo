@@ -46,9 +46,9 @@ use \FineUI\F;
             ->id('btnCustomIcon')
             ->text('自定义图标（点击修改图标）')
             ->iconUrl('/res/images/16/1.png')
-            ->onClick('./actions.php?action=btnCustomIcon_Click', [
-                'iconUrl' => new \FineUI\JsCode('this.icon'),
-            ])
+            ->onClick('./actions.php?action=btnCustomIcon_Click',
+                new \FineUI\Parameter('iconUrl', 'this.icon')
+            )
         ?>
     </div>
     <br/>

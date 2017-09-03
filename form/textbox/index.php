@@ -32,10 +32,10 @@ echo F::SimpleForm()
         F::Button()
             ->id('btnSubmit')
             ->cssClass('marginr')
-            ->onClick('./actions.php?action=btnSubmit_Click', array(
-                'userName' => new \FineUI\JsCode('F.ui.tbxUserName.getValue()'),
-                'password' => new \FineUI\JsCode('F.ui.tbxPassword.getValue()')
-            ))
+            ->onClick('./actions.php?action=btnSubmit_Click',
+                new \FineUI\Parameter('userName', 'F.ui.tbxUserName.getValue()'),
+                new \FineUI\Parameter('password', 'F.ui.tbxPassword.getValue()')
+            )
             ->validateForms('SimpleForm1')
             ->text('登录'),
         F::Button()
