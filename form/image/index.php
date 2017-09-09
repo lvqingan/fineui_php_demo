@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./form/image/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 Icon="World"：
@@ -49,7 +49,5 @@ echo F::Button()
         new \FineUI\Parameter('imageWidth', 'F.ui.Image3.getWidth()')
     )
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./button/button_group_changetext/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php
@@ -104,7 +104,5 @@ echo F::Button()
     ->onClick('./actions.php?action=btnShowHideButton2_Click',
         new \FineUI\Parameter('hidden', 'F.ui.Button8.isHidden()'));
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

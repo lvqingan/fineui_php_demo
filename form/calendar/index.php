@@ -1,9 +1,10 @@
 <?php
 $sourceFiles = ['./form/calendar/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
+use \FineUI\FineUIControls as F;
 
 $calendar1DateFormatString = 'Y-m-d';
 $button1Text = sprintf('选中%s', (new DateTime())->add(new DateInterval('P2D'))->format($calendar1DateFormatString));
@@ -34,7 +35,5 @@ echo F::Button()
 echo F::Label()
     ->id('labResult')
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

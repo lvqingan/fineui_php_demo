@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./form/textbox_textchanged/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php
@@ -43,7 +43,5 @@ echo F::Label()
 echo F::Label()
     ->id('labResult2');
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

@@ -1,9 +1,10 @@
 <?php
 $sourceFiles = ['./button/button/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
+use \FineUI\FineUIControls as F;
 ?>
     <div>
         <?php
@@ -77,7 +78,5 @@ use \FineUI\F;
             ->size(\FineUI\Enums\ButtonSize::LARGE)
         ?>
     </div>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

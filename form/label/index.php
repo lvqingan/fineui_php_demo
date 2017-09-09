@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./form/label/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <style>
@@ -51,7 +51,5 @@ echo F::Button()
         new \FineUI\Parameter('enabled', 'F.ui.Label3.isEnabled()')
     )
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

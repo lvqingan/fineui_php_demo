@@ -1,9 +1,9 @@
 <?php
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php
@@ -45,7 +45,5 @@ echo F::Image()
     ->toolTipTitle('不会自动消失的提示框')
     ->toolTip('这个提示不会自动消失，点击其他地方才会消失')
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

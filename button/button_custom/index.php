@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./button/button_custom/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <style>
@@ -39,7 +39,5 @@ echo F::Button()
         ->onClick('./actions.php?action=Button2_Click')
     ?>
 </div>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

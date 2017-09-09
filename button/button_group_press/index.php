@@ -1,9 +1,10 @@
 <?php
 $sourceFiles = ['./button/button_group_press/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
+use \FineUI\FineUIControls as F;
 
 ?>
 
@@ -245,8 +246,6 @@ echo F::Panel()
 
 
 </script>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>
 

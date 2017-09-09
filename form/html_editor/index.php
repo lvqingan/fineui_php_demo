@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./form/html_editor/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php
@@ -43,7 +43,5 @@ echo F::SimpleForm()
 ?>
 <br/>
     注：富文本编辑器可以在UMEditor、UEditor、CKEditor、TinyMCE中间选择，通过控件属性就能简单切换。
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

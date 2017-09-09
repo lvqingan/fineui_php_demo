@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./form/hyperlink/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php
@@ -40,7 +40,5 @@ echo F::Button()
         new \FineUI\Parameter('enabled', 'F.ui.HyperLink2.isEnabled()')
     )
 ?>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

@@ -1,10 +1,10 @@
 <?php
 $sourceFiles = ['./button/link_button/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
+\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
-use \FineUI\F;
-
+use \FineUI\FineUIControls as F;
 ?>
 
 <?php echo F::LinkButton()
@@ -41,7 +41,5 @@ use \FineUI\F;
             F.alert("定义在页面中的客户端事件！");
         }
     </script>
-
-<?php \FineUI\PageContext::init() ?>
 
 <?php require_once '../../include/footer.php'; ?>

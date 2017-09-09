@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="/f/f.css" rel="stylesheet"/>
     <?php
         if (isset($sourceFiles) && is_array($sourceFiles) && count($sourceFiles)) {
             foreach ($sourceFiles as $sourceFile) {
