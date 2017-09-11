@@ -1,6 +1,5 @@
 <?php
 require_once '../../lib/FineUI/autoload.php';
-\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
 use \FineUI\FineUIControls as F;
@@ -221,4 +220,5 @@ use \FineUI\FineUIControls as F;
     <br>
     <br>
 
+<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

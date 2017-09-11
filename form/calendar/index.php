@@ -1,7 +1,6 @@
 <?php
 $sourceFiles = ['./form/calendar/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
-\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
 use \FineUI\FineUIControls as F;
@@ -36,4 +35,5 @@ echo F::Label()
     ->id('labResult')
 ?>
 
+<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

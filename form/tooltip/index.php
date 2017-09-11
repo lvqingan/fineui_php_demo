@@ -1,6 +1,5 @@
 <?php
 require_once '../../lib/FineUI/autoload.php';
-\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
 use \FineUI\FineUIControls as F;
@@ -46,4 +45,5 @@ echo F::Image()
     ->toolTip('这个提示不会自动消失，点击其他地方才会消失')
 ?>
 
+<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

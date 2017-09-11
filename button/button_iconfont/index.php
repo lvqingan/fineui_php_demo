@@ -1,7 +1,6 @@
 <?php
 $sourceFiles = ['./button/button_iconfont/actions.php'];
 require_once '../../lib/FineUI/autoload.php';
-\FineUI\ScriptManger::run();
 require_once '../../include/header.php';
 
 use \FineUI\FineUIControls as F;
@@ -110,4 +109,5 @@ use \FineUI\FineUIControls as F;
         ?>
     </div>
 
+<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>
