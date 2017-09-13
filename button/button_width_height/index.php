@@ -220,5 +220,4 @@ use \FineUI\FineUIControls as F;
     <br>
     <br>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

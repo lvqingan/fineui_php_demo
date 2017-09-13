@@ -40,5 +40,4 @@ echo F::Button()
     )
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

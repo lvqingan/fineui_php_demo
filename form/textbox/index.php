@@ -9,7 +9,7 @@ use \FineUI\FineUIControls as F;
 <?php
 echo F::SimpleForm()
     ->id('SimpleForm1')
-    ->bodyPadding(5)
+    ->bodyPadding('5')
     ->width(450)
     ->enableCollapse(true)
     ->title('登录表单')
@@ -50,5 +50,4 @@ echo F::Label()
     ->showLabel(false);
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

@@ -35,5 +35,4 @@ echo F::Label()
     ->id('labResult')
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

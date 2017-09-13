@@ -33,5 +33,4 @@ use \FineUI\FineUIControls as F;
     ->onClick('./actions.php?action=btnChangeClientClick2_Click')
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

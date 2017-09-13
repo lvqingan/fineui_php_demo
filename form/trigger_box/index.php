@@ -42,5 +42,4 @@ echo F::Window()
     );
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

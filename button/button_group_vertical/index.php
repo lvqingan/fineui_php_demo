@@ -107,5 +107,4 @@ echo F::Panel()
     )
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

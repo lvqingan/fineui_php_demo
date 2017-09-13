@@ -246,6 +246,5 @@ echo F::Panel()
 
 </script>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>
 

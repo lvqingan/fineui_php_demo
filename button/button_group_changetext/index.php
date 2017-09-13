@@ -104,5 +104,4 @@ echo F::Button()
         new \FineUI\Parameter('hidden', 'F.ui.Button8.isHidden()'));
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

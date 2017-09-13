@@ -45,5 +45,4 @@ echo F::Image()
     ->toolTip('这个提示不会自动消失，点击其他地方才会消失')
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>

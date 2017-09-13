@@ -36,5 +36,4 @@ use \FineUI\FineUIControls as F;
     )
 ?>
 
-<?php \FineUI\ResourceManager\ResourceManager::render(); ?>
 <?php require_once '../../include/footer.php'; ?>
