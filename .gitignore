@@ -1,11 +1,8 @@
 /lib
-/common
 /f
 /.idea
 /favicon.ico
 /res
 /third-party
-/index.php
-/source.php
 /output
 phpdoc-cache*
