@@ -24,7 +24,7 @@ switch ($action) {
 
         UIHelper::showNotify($sb);
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
 }

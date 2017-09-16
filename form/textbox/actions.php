@@ -12,6 +12,6 @@ switch ($action) {
         UIHelper::Label('labResult')
             ->text('用户名：' . $userName . ' 密码：' . $password);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

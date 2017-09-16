@@ -17,6 +17,6 @@ switch ($action) {
             $hyperLink2->onClientClick("");
         }
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

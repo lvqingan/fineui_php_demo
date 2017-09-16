@@ -8,7 +8,7 @@ switch ($action) {
     case 'LinkButton3_Click':
         UIHelper::showNotify('这是服务器端事件');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'btnChangeEnable_Click':
         UIHelper::LinkButton('LinkButton1')
@@ -16,6 +16,6 @@ switch ($action) {
             ->text('客户端事件（在页面中定义）')
         ;
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

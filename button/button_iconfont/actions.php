@@ -13,6 +13,6 @@ switch ($action) {
         UIHelper::Button('btnCustomIconFont')
             ->iconFont($nextFont);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

@@ -9,6 +9,6 @@ switch ($action) {
         UIHelper::Window('Window1')->hide();
         UIHelper::TriggerBox('TriggerBox1')->text('弹出窗口被关闭了');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

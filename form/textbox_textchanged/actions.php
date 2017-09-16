@@ -11,7 +11,7 @@ switch ($action) {
         UIHelper::Label('labResult1')
             ->text('文本框一：' . $text);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'TextBox2_Blur':
         $text = $_POST['text'];
@@ -19,6 +19,6 @@ switch ($action) {
         UIHelper::Label('labResult2')
             ->text('文本框二：' . $text);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

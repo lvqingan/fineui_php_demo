@@ -8,12 +8,12 @@ switch ($action) {
     case 'btnServerClick_Click':
         UIHelper::showNotify('这是服务器端事件');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'btnChangeClientClick2_Click':
         UIHelper::Button('btnClientClick2')
             ->onClientClick(\FineUI\UI\Alert::getShowInTopScript("客户端事件已改变！"));
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

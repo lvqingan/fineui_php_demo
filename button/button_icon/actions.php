@@ -9,6 +9,6 @@ switch ($action) {
         UIHelper::Button('btnCustomIcon')
             ->iconUrl('/res/images/16/8.png');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

@@ -8,11 +8,11 @@ switch ($action) {
     case 'Button1_Click':
         UIHelper::showNotify('点击了普通按钮');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'Button2_Click':
         UIHelper::showNotify('点击了自定义按钮');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

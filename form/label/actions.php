@@ -10,6 +10,6 @@ switch ($action) {
 
         UIHelper::Label('Label3')->enabled(! $enabled);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

@@ -17,6 +17,6 @@ switch ($action) {
             $image3->imageHeight(32);
         }
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

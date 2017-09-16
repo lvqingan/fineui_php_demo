@@ -10,23 +10,23 @@ switch ($action) {
             ->enabled(true)
             ->text('本按钮已经启用（点击弹出对话框）');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'btnEnable_Click':
         UIHelper::showNotify('你点击了刚刚启用的按钮');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'btnChangePressed_Click':
         UIHelper::Button('btnPressed')
             ->pressed(false);
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
     case 'btnTooltip_Click':
         UIHelper::Button('btnTooltip')
             ->tooltip('这是修改后的提示信息！');
 
-        UIHelper::result();
+        echo UIHelper::result();
         break;
 }

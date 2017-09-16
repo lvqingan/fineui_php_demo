@@ -10,7 +10,7 @@ switch ($action) {
         UIHelper::Button('Button4')
             ->text(mb_strlen($text) == 3 ? '按钮四（' . date('Y/n/j H:i:s') . '）' : '按钮四');
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
     case 'btnShowHideButton_Click':
@@ -18,7 +18,7 @@ switch ($action) {
 
         UIHelper::Button('Button4')->hidden(! $hidden);
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
     case 'btnChangeButtonText2_Click':
@@ -26,7 +26,7 @@ switch ($action) {
         UIHelper::Button('Button8')
             ->text(mb_strlen($text) == 3 ? '按钮八（' . date('Y/n/j H:i:s') . '）' : '按钮八');
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
     case 'btnShowHideButton2_Click':
@@ -34,7 +34,7 @@ switch ($action) {
 
         UIHelper::Button('Button8')->hidden(! $hidden);
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
 }

@@ -10,7 +10,7 @@ switch ($action) {
 
         updateResult(DateTime::createFromFormat('Y-m-d', $selectedDate));
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
 
@@ -21,7 +21,7 @@ switch ($action) {
 
         updateResult($selectedDate);
 
-        UIHelper::result();
+        echo UIHelper::result();
 
         break;
 }
